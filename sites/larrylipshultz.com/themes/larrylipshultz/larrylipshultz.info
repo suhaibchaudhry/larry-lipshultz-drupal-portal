@@ -53,6 +53,16 @@ zones[postscript] = Postscript
 zones[footer] = Footer first
 zones[footer2] = Footer second
 
+; NEW ZONES AND REGIONS
+
+zones[testimonials] = Testimonials
+regions[testimonials_first] = Testimonials First
+
+zones[copyright] = Copyright
+regions[copyright_first] = Copyright First
+
+regions[footer2_third] = Footer2 Third
+regions[footer2_fourth] = Footer2 Fourth
 
 ; OPTIONAL STYLESHEETS
 
