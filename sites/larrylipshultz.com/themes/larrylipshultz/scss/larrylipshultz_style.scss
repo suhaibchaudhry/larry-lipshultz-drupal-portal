@@ -5,5 +5,44 @@
 /* Include Default Variables & Mixins */
 @import "_variables.scss";
 @import "_mixins.scss";
+@import "compass";
 /* End Variables & Mixins */
 
+.section-header {
+	//background-image: url("http://d21xh06p65pae.cloudfront.net/www.larrylipshultz.com/assets/images/tex-soft-stone-v1449603337.png");
+	@include background-image(radial-gradient(50% 31%,ellipse farthest-side,#0974aa,#00334d 100%));
+}
+
+.zone-user-wrapper {
+	height: 40px;
+	background: url("//d21xh06p65pae.cloudfront.net/www.larrylipshultz.com/assets/images/tex-soft-stone-v1449603337.png") top center rgba(0, 0, 0, 0.20);
+	color: #fff;
+		
+	.region-user-first {
+		line-height: 40px;
+		margin-left: 0;
+		
+		.block-menu-user-bar-menu {
+			ul li {
+				list-style: none;
+				float: left;
+
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}	
+	
+	.region-user-second {
+		line-height: 40px;
+
+		.block-block-1 {
+			float: right;
+		}
+	}
+}
+
+.zone-branding-wrapper {
+	    background: url("//d21xh06p65pae.cloudfront.net/www.larrylipshultz.com/assets/images/tex-soft-stone-v1449603337.png") top center;
+}
