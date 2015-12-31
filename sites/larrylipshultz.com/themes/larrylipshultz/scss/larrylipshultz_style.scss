@@ -8,6 +8,8 @@
 @import "compass";
 /* End Variables & Mixins */
 
+@import "//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic:latin|Tinos:400,700,400italic,700italic:latin";
+
 .section-header {
 	//background-image: url("http://d21xh06p65pae.cloudfront.net/www.larrylipshultz.com/assets/images/tex-soft-stone-v1449603337.png");
 	@include background-image(radial-gradient(50% 31%,ellipse farthest-side,#0974aa,#00334d 100%));
@@ -15,27 +17,53 @@
 
 .zone-user-wrapper {
 	height: 40px;
-	background: url("//d21xh06p65pae.cloudfront.net/www.larrylipshultz.com/assets/images/tex-soft-stone-v1449603337.png") top center rgba(0, 0, 0, 0.20);
+	@include background-image(radial-gradient(50% 91%,ellipse farthest-side,#0974aa,#00334d 100%));
 	color: #fff;
-		
+	border-bottom: 1px solid #000;
+	font: 14px/38px "PT Sans";
+	text-transform: uppercase;
+
+  .overLayer {
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		background: url("//d21xh06p65pae.cloudfront.net/www.larrylipshultz.com/assets/images/tex-soft-stone-v1449603337.png") top center rgba(0, 0, 0, 0.20);
+	}
+
 	.region-user-first {
 		line-height: 40px;
 		margin-left: 0;
-		
+
 		.block-menu-user-bar-menu {
 			ul li {
 				list-style: none;
 				float: left;
+				margin: 0 0 0 3px;
 
 				a {
 					color: #fff;
+					border-right: 1px solid #fff;
+					padding: 0 9px 0 0;
+				}
+				&.last {
+					a {
+						border: none;
+					}
 				}
 			}
 		}
-	}	
-	
+	}
+
 	.region-user-second {
 		line-height: 40px;
+
+		span {
+			border-right: 1px solid #fff;
+    	margin: 0 10px 0 0;
+    	padding: 0 10px 0 0;
+		}
 
 		.block-block-1 {
 			float: right;
