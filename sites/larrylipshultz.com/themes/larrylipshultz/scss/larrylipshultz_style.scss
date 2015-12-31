@@ -73,4 +73,67 @@
 
 .zone-branding-wrapper {
 	    background: url("//d21xh06p65pae.cloudfront.net/www.larrylipshultz.com/assets/images/tex-soft-stone-v1449603337.png") top center;
+
+			.region-header-first {
+				.block-menu {
+					margin: 97px 0 0;
+					ul.menu {
+						li {
+							list-style:  none outside none;
+							float: left;
+							border-left-width: 1px;
+    					border-left-style: solid;
+							border-color: rgba(255,255,255,0.25);
+							position:  relative;
+							padding: 0 15px 0 15px;
+							margin: 0;
+							&:before {
+								content: '';
+								display: block;
+								width: 1px;
+								height: 100%;
+								border-left: 1px solid rgba(0,0,0,0.25);
+								position: absolute;
+								left: -2px;
+								top: 0;
+							}
+							a {
+								font-size: 16px;
+								line-height: 15px;
+								text-decoration: none;
+								text-transform: none;
+								font-family: 'PT Sans', sans-serif;
+								display: block;
+								color: #fff;
+								span {
+									font-size: 12px;
+									display: block;
+									color: #b6afb6;
+								}
+								&:hover {
+									color: #b6afb6;
+									&:before {
+										content: '';
+								    display: block;
+								    border-bottom: 3px solid #b6afb6;
+								    position: absolute;
+								    left: 0;
+								    right: 0;
+								    bottom: -6px;
+								    margin: 0 13px;
+									}
+								}
+							}
+							&.last {
+								padding-right: 0;
+								a:hover {
+									&:before {
+										margin: 0 0 0 13px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 }
