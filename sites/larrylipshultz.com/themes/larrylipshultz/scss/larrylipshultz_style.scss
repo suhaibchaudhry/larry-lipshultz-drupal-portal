@@ -10,14 +10,14 @@
 
 @import "//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic:latin|Tinos:400,700,400italic,700italic:latin";
 
-.section-header {
+.section-header, .zone-user-wrapper {
 	//background-image: url("http://d21xh06p65pae.cloudfront.net/www.larrylipshultz.com/assets/images/tex-soft-stone-v1449603337.png");
-	@include background-image(radial-gradient(50% 31%,ellipse farthest-side,#0974aa,#00334d 100%));
+	@include background-image(radial-gradient(50% 31%,ellipse farthest-side,#0B90D3,#065379 100%));
 }
 
 .zone-user-wrapper {
 	height: 40px;
-	@include background-image(radial-gradient(50% 91%,ellipse farthest-side,#0974aa,#00334d 100%));
+	//@include background-image(radial-gradient(50% 91%,ellipse farthest-side,#0974aa,#00334d 100%));
 	color: #fff;
 	border-bottom: 1px solid #000;
 	font: 14px/38px "PT Sans";
