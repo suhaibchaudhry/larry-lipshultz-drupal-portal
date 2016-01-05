@@ -17,9 +17,9 @@
 
 .zone-user-wrapper {
 	height: 40px;
-	@include background-image(radial-gradient(50% 91%,ellipse farthest-side,#0B90D3,#065379 100%));
+	@include background-image(radial-gradient(50% 91%,ellipse farthest-side,#0B90D3,#063D58 100%));
 	color: #fff;
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid #0974aa;
 	font: 14px/38px "PT Sans";
 	text-transform: uppercase;
 
@@ -29,7 +29,8 @@
 		bottom: 0;
 		right: 0;
 		position: absolute;
-		background: url("//d21xh06p65pae.cloudfront.net/www.larrylipshultz.com/assets/images/tex-soft-stone-v1449603337.png") top center rgba(0, 0, 0, 0.20);
+		border-bottom: 1px solid #00334d;
+		background: url("//d21xh06p65pae.cloudfront.net/www.larrylipshultz.com/assets/images/tex-soft-stone-v1449603337.png") top center rgba(0, 51, 77, 0.25);
 	}
 
 	.region-user-first {
