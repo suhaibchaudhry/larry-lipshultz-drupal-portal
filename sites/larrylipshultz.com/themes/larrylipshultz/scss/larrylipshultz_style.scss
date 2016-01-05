@@ -57,9 +57,11 @@
 		}
 	}
 
+	#region-user-second {
+		background: none;
+	}
 	.region-user-second {
 		line-height: 40px;
-
 		span {
 			border-right: 1px solid #fff;
     	margin: 0 10px 0 0;
@@ -75,9 +77,18 @@
 .zone-branding-wrapper {
 	    background: url("//d21xh06p65pae.cloudfront.net/www.larrylipshultz.com/assets/images/tex-soft-stone-v1449603337.png") top center;
 
+			.zone-branding {
+				padding: 50px 0 18px;
+				.region-branding {
+					margin: 0;
+				}
+			}
+
 			.region-header-first {
+				padding: 49px 0 0;
+
 				.block-menu {
-					margin: 97px 0 0;
+					//margin: 97px 0 0;
 					ul.menu {
 						li {
 							list-style:  none outside none;
