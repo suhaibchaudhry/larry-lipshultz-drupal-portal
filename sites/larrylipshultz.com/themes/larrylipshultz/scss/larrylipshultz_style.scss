@@ -10,11 +10,45 @@
 
 @import "//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic:latin|Tinos:400,700,400italic,700italic:latin";
 
-.section-header {
-	//background-image: url("http://d21xh06p65pae.cloudfront.net/www.larrylipshultz.com/assets/images/tex-soft-stone-v1449603337.png");
-	@include background-image(radial-gradient(50% 31%,ellipse farthest-side,#0B90D3,#065379 100%));
+body {
+	font: 14px 'PT Sans', sans-serif;
+	background-color: #f6f6f6;
 }
 
+h1, h2, h3, h4, h5 {
+	  font-family: "Tinos", serif;
+		color: #065379;
+		font-weight: normal;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 1em;
+}
+
+h2 {
+	  font-size: 24px;
+    line-height: 24px;
+    margin: 0 0 8px 0;
+    border-bottom: 1px solid #d6d6d6;
+    padding-bottom: 8px;
+}
+
+a:link, a:visited {
+  color: #065379;
+	border-color: #065379;
+  text-decoration: none; }
+
+a:hover {
+	color: #0b95da;
+	border-color: #0b95da; }
+
+.section-header {
+	@include background-image(radial-gradient(50% 31%,ellipse farthest-side,#0B90D3,#065379 100%));
+}
+.zone-preface {
+	background: none;
+}
 .zone-user-wrapper {
 	height: 40px;
 	@include background-image(radial-gradient(50% 91%,ellipse farthest-side,#0B90D3,#063D58 100%));
@@ -30,7 +64,7 @@
 		right: 0;
 		position: absolute;
 		border-bottom: 1px solid #00334d;
-		background: url("//d21xh06p65pae.cloudfront.net/www.larrylipshultz.com/assets/images/tex-soft-stone-v1449603337.png") top center rgba(0, 51, 77, 0.25);
+		background: url("../images/tex-soft-stone-v1449603337.png") top center rgba(0, 51, 77, 0.25);
 	}
 
 	.region-user-first {
@@ -75,7 +109,7 @@
 }
 
 .zone-branding-wrapper {
-	    background: url("//d21xh06p65pae.cloudfront.net/www.larrylipshultz.com/assets/images/tex-soft-stone-v1449603337.png") top center;
+	    background: url("../images/tex-soft-stone-v1449603337.png") top center;
 
 			.zone-branding {
 				padding: 50px 0 18px;
@@ -150,17 +184,276 @@
 			}
 }
 
+//Accordion
+.z-accordion.horizontal > .z-section > .z-header {
+	text-shadow: none;
+	color: #fff;
+	font-family: 'Tinos', serif;
+	font-size: 18px !important;
+	line-height: 48px;
+	text-transform: uppercase;
+	@include background-image(linear-gradient(top, #065379 0%, #0974aa 50%, #065379 50%));
+}
+
+.z-accordion.horizontal > .z-active > .z-header {
+	color: #000;
+	@include background-image(linear-gradient(top, #c2bcc2 0%, #b6afb6 50%, #c2bcc2 50%));
+}
+
 .views-uitoux-accordion {
 	.home-slide {
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
 		background-size: cover;
 		background-repeat: none;
+		font-family: 'Tinos', serif;
+
+		.slide-text-wrap {
+			display: table;
+	    height: 100%;
+	    width: 46%;
+			line-height: 24px;
+
+			.slide-text {
+				display: table-cell;
+		    vertical-align: middle;
+		    padding: 0 0 0 55px;
+			}
+
+			.caption {
+				font-size: 24px;
+				margin: 0 0 24px;
+			}
+
+			a {
+				display: inline-block;
+				border: 1px solid #065379;
+				color: #fff;
+				border-radius: 3px;
+    		padding: 5px 15px;
+				font-size: 12px;
+				@include background-image(linear-gradient(top, #0b95da 0%, #065379 100%));
+
+				&:hover {
+					border-color: #0b95da;
+					@include background-image(linear-gradient(top,#0da6f2 0%,#086391 100%));
+				}
+			}
+		}
 	}
+
 	.z-auto-g {
 		padding: 0;
+	}
+}
+
+//Narrow Style
+#main .push-left, #main .img-left {
+    float: left;
+    margin: 5px 10px 5px 0px;
+}
+#main img {
+    margin-top: 5px;
+    -moz-box-shadow: 0px 0px 15px #dedede;
+    -webkit-box-shadow: 0px 0px 15px #dedede;
+    box-shadow: 0px 0px 15px #dedede;
+    border: 10px solid #fff;
+}
+
+.block .content p {
+	color: #676767;
+	margin-bottom: 1em;
+	a:link {
+		text-decoration: underline;
+	}
+}
+
+//Share Widget
+#at4-share {
+	margin: 50px 0 0 !important;
+}
+
+//Accurate
+.accuwrap {
+	margin: 15px 0 30px;
+}
+
+//Footer2
+.section-footer {
+	@include background-image(radial-gradient(50% 1%, ellipse farthest-side, #0974aa, #00334d 100%));
+	.zone-footer2-wrapper {
+		background: url("../images/tex-soft-stone-v1449603337.png") top center;
+		.zone-footer2 {
+		  h2 {
+		      font-size: 24px;
+		      line-height: 24px;
+		      font-weight: normal;
+		      margin: 0;
+		      padding-bottom: 10px;
+		      text-align: left;
+		      border-bottom: 1px solid #0c0c0c;
+		      border-bottom: 1px solid rgba(0,0,0,0.75);
+					color: #fff;
+		  }
+
+		  ul {
+		      margin: 0;
+					padding: 0;
+		      border-bottom: 1px solid #3b3b3b;
+		      border-bottom: 1px solid rgba(255,255,255,0.25);
+		  }
+
+		  ul li {
+					list-style: none outside none;
+		      padding: 6px 0 5px;
+		      border-bottom: 1px solid #0c0c0c;
+		      border-bottom: 1px solid rgba(0,0,0,0.75);
+		      border-top: 1px solid #3b3b3b;
+		      border-top: 1px solid rgba(255,255,255,0.25);
+		      margin: 0px;
+		  }
+
+		  ul li a {
+		      line-height: 1em;
+		      padding-left: 10px;
+		      display: inline-block;
+		      width: 100%;
+		      padding-right: 30px;
+					color: #fff;
+
+					&:hover {
+						text-decoration: underline;
+					}
+		  }
+
+		  a.blog, a.docshop, a.lawyershop, a.facebook, a.googleplus, a.linkedin, a.twitter, a.yelp, a.youtube, a.pinterest, a.foursquare, a.instagram, a.flickr, a.healthgrades {
+		      display: block;
+		      margin-left: 5px;
+		      margin-top: 2px;
+		      padding: 7px 0 12px 42px;
+		      background-image: url('../images/social_media_icons.png');
+		      background-repeat: no-repeat;
+		  }
+
+		  a.blog {
+		      background-position: 0 0;
+		  }
+
+		  a.blog:hover {
+		      background-position: 0 -42px;
+		  }
+
+		  a.docshop {
+		      background-position: 0 -84px;
+		  }
+
+		  a.docshop:hover {
+		      background-position: 0 -126px;
+		  }
+
+		  a.facebook {
+		      background-position: 0 -168px;
+		  }
+
+		  a.facebook:hover {
+		      background-position: 0 -210px;
+		  }
+
+		  a.googleplus {
+		      background-position: 0 -252px;
+		  }
+
+		  a.googleplus:hover {
+		      background-position: 0 -294px;
+		  }
+
+		  a.linkedin {
+		      background-position: 0 -336px;
+		  }
+
+		  a.linkedin:hover {
+		      background-position: 0 -378px;
+		  }
+
+		  a.twitter {
+		      background-position: 0 -420px;
+		  }
+
+		  a.twitter:hover {
+		      background-position: 0 -462px;
+		  }
+
+		  a.youtube {
+		      background-position: 0 -504px;
+		  }
+
+		  a.youtube:hover {
+		      background-position: 0 -546px;
+		  }
+
+		  a.lawyershop {
+		      background-position: 0 -588px;
+		  }
+
+		  a.lawyershop:hover {
+		      background-position: 0 -630px;
+		  }
+
+		  a.yelp {
+		      background-position: 0 -756px;
+		  }
+
+		  a.yelp:hover {
+		      background-position: 0 -798px;
+		  }
+
+		  a.pinterest {
+		      background-position: 0 -840px;
+		  }
+
+		  a.pinterest:hover {
+		      background-position: 0 -882px;
+		  }
+
+		  a.foursquare {
+		      background-position: 0 -924px;
+		  }
+
+		  a.foursquare:hover {
+		      background-position: 0 -966px;
+		  }
+
+		  a.instagram {
+		      background-position: 0 -1008px;
+		  }
+
+		  a.instagram:hover {
+		      background-position: 0 -1050px;
+		  }
+
+		  a.flickr {
+		      background-position: 0 -1092px;
+		  }
+
+		  a.flickr:hover {
+		      background-position: 0 -1134px;
+		  }
+
+		  a.healthgrades {
+		      background-position: 0 -1176px;
+		  }
+
+		  a.healthgrades:hover {
+		      background-position: 0 -1218px;
+		  }
+
+		  .copyright {
+		      clear: both;
+		      text-align: center;
+		      display: block;
+		  }
+
+		  .copyright a:link, .copyright a:visited {
+		      text-decoration: underline;
+		  }
+		}
 	}
 }
