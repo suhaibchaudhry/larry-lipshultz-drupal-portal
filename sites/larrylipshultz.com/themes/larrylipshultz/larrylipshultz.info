@@ -78,11 +78,11 @@ settings[alpha_css][larrylipshultz_style.css] = 'larrylipshultz_style.css'
 
 ; OPTIONAL LIBRARIES
 
-libraries[uitoux_theme_custom][name] = UI To UX theme JS
+libraries[uitoux_theme_custom][name] = Larry Lipshultz Custom JS
 libraries[uitoux_theme_custom][description] = This file holds all the custom JS.
-libraries[uitoux_theme_custom][js][0][file] = uitoux_theme_custom.js
+libraries[uitoux_theme_custom][js][0][file] = larrylipshultz_custom.js
 libraries[uitoux_theme_custom][js][0][options][weight] = 15
-settings[alpha_libraries][uitoux_theme_custom] = 'uitoux_theme_custom'
+settings[alpha_libraries][uitoux_theme_custom] = 'larrylipshultz_custom'
 
 libraries[jquery_browser][name] = jQuery Browser Plugin
 libraries[jquery_browser][description] = jQuery browser plugin to allow $.browser with jQuery 1.9.1+.
