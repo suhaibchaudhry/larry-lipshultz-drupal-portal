@@ -276,6 +276,12 @@ a:hover {
 	margin: 15px 0 30px;
 }
 
+//Social Stripe
+#social_stripe {
+    width: 100%;
+    height: 140px;
+}
+
 //Footer2
 .section-footer {
 	@include background-image(radial-gradient(50% 1%, ellipse farthest-side, #0974aa, #00334d 100%));
