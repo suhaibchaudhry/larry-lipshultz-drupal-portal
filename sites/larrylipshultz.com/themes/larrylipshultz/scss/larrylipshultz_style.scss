@@ -494,9 +494,85 @@ a:hover {
 		border: 5px solid #fff;
 		border-radius: 0 5px 5px 0;
 		border-left: 0;
+		color: #676767;
+
+		h2 {
+			font-size: 28px;
+			border: none;
+			font-weight: normal;
+			line-height: 28px;
+    	margin: 0 0 5px 0;
+			color: #676767;
+		}
+
+		.form-item {
+			display: inline-block;
+			margin: 0;
+		}
+
+		.webform-component--free-field {
+			display: block;
+			margin: 10px 0;
+		}
+
+		.webform-component--free-field2 {
+			display: block;
+			margin: 20px 0 5px;
+		}
+
+		label {
+			display: inline-block;
+			padding: 2px 0 0;
+			margin: 0;
+			font-weight: normal;
+		}
+
+		input {
+			width: 150px;
+			border-color: #c9c9c9;
+		}
+
+		a.expand {
+			background: url("../images/icons.png") no-repeat;
+    	background-position: -4px -31px;
+			padding: 0 0 0 25px;
+			margin: 10px 0 25px;
+			display: block;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		.webform-component--message {
+			display: none;
+		}
+
+		.icon-pane {
+			position: absolute;
+			right: 0;
+			top: 0;
+
+			.message {
+				float: left;
+				color: #676767;
+				font-size: 22px;
+				line-height: 24px;
+				text-align: right;
+				margin: 8px 10px 0 0;
+				font-weight: normal;
+			}
+			.icon {
+				float: right;
+				background: url("../images/email-icon.png");
+				width: 119px;
+				height: 117px;
+			}
+		}
 	}
 
 	.region-postscript-second-inner {
+		padding: 15px;
 		@include background-image(linear-gradient(top, #ccc 10%, #e6e6e6 60%));
 	}
 }
