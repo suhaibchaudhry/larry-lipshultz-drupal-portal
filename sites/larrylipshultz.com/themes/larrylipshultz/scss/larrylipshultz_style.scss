@@ -498,6 +498,20 @@ a:hover {
     	margin: 0 0 5px 0;
 			color: #676767;
 		}
+
+		a.direction {
+			padding: 5px 10px;
+			color: #fff;
+			margin: 10px 0 0;
+			display: block;
+			text-align: center;
+			@include rounded-corners(3px);
+			@include background-image(linear-gradient(top, #0b95da 0%, #065379 100%));
+
+			&:hover {
+				@include background-image(linear-gradient(top, #0da6f2 0%, #086391 100%));
+			}
+		}
 	}
 
 	.region-postscript-second {
