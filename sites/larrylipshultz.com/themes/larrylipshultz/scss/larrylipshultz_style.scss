@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-	  font-size: 24px;
+    font-size: 24px;
     line-height: 24px;
     margin: 0 0 8px 0;
     border-bottom: 1px solid #d6d6d6;
@@ -268,8 +268,11 @@ a:hover {
 			}
 		}
 
-		h1 {
-			font: 14px 'PT Sans', sans-serif;	
+		h1#page-title {
+			font-weight: normal;
+			font-size: 36px;
+			text-transform: none;
+			
 		}
 
 		h2 {
