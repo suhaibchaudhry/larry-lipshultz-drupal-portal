@@ -608,3 +608,39 @@ a:hover {
 		@include background-image(linear-gradient(top, #ccc 10%, #e6e6e6 60%));
 	}
 }
+
+//Sidebar Menu
+.region-sidebar-second {
+	.block-menu {
+		h2.block-title {
+			margin-bottom: 10px;
+			font-size: 25px;
+		}
+
+		.content {
+			padding: 10px;
+			background-color: #fff;
+			box-shadow: 0px 20px 100px -50px #000;
+			
+			ul {
+				background-color: #efefef;
+				padding: 15px;
+				
+				li {
+					border-radius: 7px;
+					list-style-type: none;
+					list-style-image: initial;
+					padding: 10px;
+
+					&.active-trail {
+						background: #00334d;
+
+						a {
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}
