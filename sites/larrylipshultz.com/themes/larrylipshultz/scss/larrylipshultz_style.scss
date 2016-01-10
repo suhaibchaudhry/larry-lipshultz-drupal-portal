@@ -260,11 +260,18 @@ a:hover {
 		    border: 10px solid #fff;
 		}
 
-		.content p {
-			color: #676767;
-			margin-bottom: 1em;
-			a:link {
-				text-decoration: underline;
+		.content {
+			p {
+				color: #676767;
+				margin-bottom: 1em;
+				line-height: 22px;
+				a:link {
+					text-decoration: underline;
+				}
+			}
+
+			ul, ol {
+				color: #676767;
 			}
 		}
 
@@ -272,7 +279,6 @@ a:hover {
 			font-weight: normal;
 			font-size: 36px;
 			text-transform: none;
-			
 		}
 
 		h2 {
