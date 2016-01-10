@@ -1,0 +1,13 @@
+diff --git mappers/taxonomy.inc mappers/taxonomy.inc
+index 01d92f3..9e85faa 100644
+--- mappers/taxonomy.inc
++++ mappers/taxonomy.inc
+@@ -68,7 +68,7 @@ function taxonomy_feeds_set_target($source, $entity, $target, $terms) {
+ 
+   // Handle non-multiple values.
+   if (!is_array($terms)) {
+-    $terms = array($terms);
++    $terms = is_string($terms) ? drupal_explode_tags($terms) : array($terms);
+   }
+ 
+   $info = field_info_field($target);
