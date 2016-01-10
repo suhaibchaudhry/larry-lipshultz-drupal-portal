@@ -1,0 +1,4 @@
+name = Subtitle
+description = Provides a subtitle.
+core = 7.x
+package = UI To UX - Display Widgets
