@@ -1,0 +1,4 @@
+function subtitle_block_view_alter(&$data, $block) {
+	dpm($block);
+	dpm($data);
+}
