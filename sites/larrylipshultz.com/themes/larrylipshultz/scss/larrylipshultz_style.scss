@@ -247,29 +247,35 @@ a:hover {
 
 //Narrow Style
 .page-node {
-	.region-content .push-left, .region-content .img-left {
-	    float: left;
-	    margin: 5px 10px 5px 0px;
-	}
-	.region-content img {
-	    margin-top: 5px;
-	    -moz-box-shadow: 0px 0px 15px #dedede;
-	    -webkit-box-shadow: 0px 0px 15px #dedede;
-	    box-shadow: 0px 0px 15px #dedede;
-	    border: 10px solid #fff;
-	}
-
-	.region-content .content p {
-		color: #676767;
-		margin-bottom: 1em;
-		a:link {
-			text-decoration: underline;
+	.region-content {
+		.push-left, .img-left {
+		    float: left;
+		    margin: 5px 10px 5px 0px;
 		}
-	}
+		img {
+		    margin-top: 5px;
+		    -moz-box-shadow: 0px 0px 15px #dedede;
+		    -webkit-box-shadow: 0px 0px 15px #dedede;
+		    box-shadow: 0px 0px 15px #dedede;
+		    border: 10px solid #fff;
+		}
 
-	.region-content h2 {
-		clear: both;
-		padding: 10px 0;
+		.content p {
+			color: #676767;
+			margin-bottom: 1em;
+			a:link {
+				text-decoration: underline;
+			}
+		}
+
+		h1 {
+			font: 14px 'PT Sans', sans-serif;	
+		}
+
+		h2 {
+			clear: both;
+			padding: 10px 0;
+		}
 	}
 }
 
