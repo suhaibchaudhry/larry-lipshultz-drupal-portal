@@ -26,3 +26,8 @@ function larrylipshultz_menu_link(array $variables) {
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
+
+function larrylipshultz_preprocess_node(&$variables) {
+  $user = user_load($variables['uid']);
+  $variables['submitted'] = t('!date — by !author', array('!author' => $user->field_full_name['und'][0]['value'], '!date' => date("M j, Y", $variables['created'])));
+}
