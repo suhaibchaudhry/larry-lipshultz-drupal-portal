@@ -1,5 +1,10 @@
 <?php
 function subtitle_block_view_alter(&$data, $block) {
-	dpm($block);
-	dpm($data);
+	if($block->delta == 'blockify-page-title') {
+		$node = menu_get_object();
+		$subtitle = $node->field_subheading['und'][0]['value'];
+		if(!empty($subtitle)) {
+			$data['content'] = '<div class="subhead"><p class="headline">'.$node->title.'</p><h1>'.$subtitle.'</h1></div>';
+		}
+	}
 }
