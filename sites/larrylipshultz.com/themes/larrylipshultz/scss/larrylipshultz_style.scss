@@ -303,7 +303,7 @@ a:hover {
 	}
 
 	.content {
-		p {
+		p, td {
 			color: #676767;
 			margin-bottom: 1em;
 			line-height: 22px;
@@ -312,9 +312,13 @@ a:hover {
 			}
 		}
 
-		ul, ol {
+		ul, ol, dl, dt {
 			line-height: 22px;
 			color: #676767;
+		}
+
+		dl, dt {
+			font-size: 14px;
 		}
 	}
 
@@ -346,6 +350,79 @@ a:hover {
 	h2 {
 		clear: both;
 		padding: 10px 0;
+	}
+
+	div.sitemap {
+		width: 100%;
+		margin: 30px 0px 0px 0px;
+	}
+
+	div.sitemap h2.headline {
+	  line-height: 40px;
+	  margin: 0 0 20px 0;
+	}
+
+	div.sitemap ul {
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  list-style-type: none;
+	}
+
+	div.sitemap ul li {
+	  overflow: auto;
+	}
+
+	div.sitemap ul.top {
+	  display: block;
+	  float: left;
+	  width: 290px;
+	  margin: 0 0 20px 0;
+	  line-height: 22px;
+	  font-size: 22px;
+	}
+
+	div.sitemap ul li ul li {
+	  line-height: 24px;
+	}
+
+	div.sitemap ul.top li a {
+	  margin: 0 0 0px 0;
+	  display: block;
+	  background: none;
+	  padding-left: 3px;
+	  padding-bottom: 5px;
+	}
+
+	div.sitemap ul.top li ul li a {
+	  border: none;
+	  margin: 0;
+	  font-size: 14px;
+	  line-height: 24px;
+	  display: block;
+	  padding-bottom: 0;
+	}
+
+	div.sitemap ul.top li ul li {
+	  padding-left: 18px;
+	}
+
+	div.sitemap ul.top li ul li.last-child {
+	  padding-bottom: 0;
+	}
+
+	div.sitemap-rows {
+	  width: 100%;
+	  overflow: auto;
+	  margin-bottom: 20px;
+	}
+
+	div.sitemap ul.top li ul li {
+    background: transparent url('../images/ul-long-v1449603337.png') no-repeat 0 -6px;
+	}
+
+	div.sitemap ul.top li ul li.last-child {
+	    background: transparent url('../images/ul-end-v1449603337.png') no-repeat 0px -25px;
 	}
 }
 
