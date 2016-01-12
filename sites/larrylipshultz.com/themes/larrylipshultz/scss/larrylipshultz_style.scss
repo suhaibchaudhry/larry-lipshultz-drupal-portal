@@ -290,8 +290,55 @@ a:hover {
 	    margin: 5px 0 5px 10px;
 	}
 
+	a.button {
+			text-shadow: none;
+		  font-weight: normal;
+			font-family: 'PT Sans', sans-serif;
+	    -webkit-border-radius: 3px;
+			font-size: 14px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;
+	    padding: 5px 15px;
+	    text-decoration: none;
+	    display: inline-block;
+	    color: #065379;
+	    border-color: #065379;
+	    color: #fff;
+	    background: #065379;
+	    background: -moz-linear-gradient(top,#0b95da 0%,#065379 100%);
+	    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#0b95da),color-stop(100%,#065379));
+	    background: -webkit-linear-gradient(top,#0b95da 0%,#065379 100%);
+	    background: -o-linear-gradient(top,#0b95da 0%,#065379 100%);
+	    background: -ms-linear-gradient(top,#0b95da 0%,#065379 100%);
+	    background: linear-gradient(top,#0b95da 0%,#065379 100%);
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0b95da',endColorstr='#065379',GradientType=0);
+
+			&:hover {
+			 color: #fff;
+			 background: #086391;
+			 background: -moz-linear-gradient(top,#0da6f2 0%,#086391 100%);
+			 background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#0da6f2),color-stop(100%,#086391));
+			 background: -webkit-linear-gradient(top,#0da6f2 0%,#086391 100%);
+			 background: -o-linear-gradient(top,#0da6f2 0%,#086391 100%);
+			 background: -ms-linear-gradient(top,#0da6f2 0%,#086391 100%);
+			 background: linear-gradient(top,#0da6f2 0%,#086391 100%);
+			 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0da6f2',endColorstr='#086391',GradientType=0);
+			}
+	}
+
 	hr {
 		clear: both;
+		background-image: -moz-radial-gradient(50% 100%,ellipse farthest-side,#d0d0d0,#f6f6f6 100%);
+    background-image: -webkit-radial-gradient(50% 100%,ellipse farthest-side,#d0d0d0,#f6f6f6 100%);
+    background-image: -o-radial-gradient(50% 100%,ellipse farthest-side,#d0d0d0,#f6f6f6 100%);
+    background-image: -ms-radial-gradient(50% 100%,ellipse farthest-side,#d0d0d0,#f6f6f6 100%);
+    background-image: radial-gradient(50% 100%,ellipse farthest-side,#d0d0d0,#f6f6f6 100%);
+		clear: both;
+		border: 0 none !important;
+		padding: 0;
+		margin: 15px 0 40px 0px;
+		display: block;
+		height: 25px;
 	}
 
 	img {
@@ -803,4 +850,307 @@ a:hover {
 			}
 		}
 	}
+}
+
+//Original Layout
+.row {
+    width: 100%;
+    overflow: visible;
+}
+
+.row > .col {
+		box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding: 0 20px;
+}
+
+.row > .col.pure {
+    padding: 0;
+}
+
+.row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.row.cols1 > .col.span1, .row.cols1 > .col {
+    width: 100%;
+}
+
+.row.cols2 > .col.span1, .row.cols2 > .col {
+    width: 50%;
+}
+
+.row.cols2 > .col.span2 {
+    width: 100%;
+}
+
+.row.cols3 > .col.span1, .row.cols3 > .col {
+    width: 33.3%;
+}
+
+.row.cols3 > .col.span2 {
+    width: 66.6%;
+}
+
+.row.cols3 > .col.span3 {
+    width: 100%;
+}
+
+.row.cols4 > .col.span1, .row.cols4 > .col {
+    width: 25%;
+}
+
+.row.cols4 > .col.span2 {
+    width: 50%;
+}
+
+.row.cols4 > .col.span3 {
+    width: 75%;
+}
+
+.row.cols4 > .col.span4 {
+    width: 100%;
+}
+
+//Mods
+.mod p {
+    text-align: center;
+}
+
+.mod p.h2 {
+    border-bottom: 0;
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+}
+
+.mod .button {
+    display: inline-block;
+    width: 100%;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.mod p.desc {
+    line-height: 16px;
+    margin-top: 10px;
+}
+
+.mod .row.links .col.first-child {
+    text-align: right;
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.mod .row.links .col.last-child {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+.mod.box, .mod.text {
+    text-align: left;
+}
+
+.mod.box p, .mod.text p {
+    text-align: left;
+}
+
+.mod.box p.h2, .mod.text p.h2 {
+    text-align: center;
+}
+
+.mod.pod img {
+    width: 100%;
+    height: auto;
+}
+
+.mod.pod p {
+    text-align: left;
+}
+
+.mod.pod .button {
+    width: auto;
+}
+
+.mod.video .row .col {
+    text-align: center;
+}
+
+.mod.video a.video {
+    float: none;
+    height: 170px;
+}
+
+.mod.bna .row .col {
+    text-align: center;
+}
+
+.mod.bna .case .row .col.first-child {
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+.mod.bna .case .row .col.last-child {
+    padding-left: 5px;
+    padding-right: 0;
+}
+
+.mod.bna .img-container {
+    border: 10px solid #fff;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+    height: 170px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.mod.bna .case a:hover .img-container {
+    border-color: #eee;
+}
+
+.mod.bna .img-container .inner {
+    width: 500px;
+    position: absolute;
+    height: 150px;
+    left: 50%;
+    margin-left: -250px;
+}
+
+.mod.bna img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.mod.blog, .mod.blog_1, .mod.custom_ticker, .mod.custom_ticker_1 {
+    margin: 0;
+    padding: 8px 8px;
+}
+
+.mod.blog .ticker, .mod.blog_1 .ticker, .mod.custom_ticker .ticker, .mod.custom_ticker_1 .ticker {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 270px;
+}
+
+.mod.blog .ticker div.items, .mod.blog_1 .ticker div.items, .mod.custom_ticker .ticker div.items, .mod.custom_ticker_1 .ticker div.items {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    height: 20000em;
+}
+
+.mod.blog .ticker div.item, .mod.blog_1 .ticker div.item, .mod.custom_ticker .ticker div.item, .mod.custom_ticker_1 .ticker div.item {
+    height: auto;
+    font-size: 14px;
+    line-height: 21px;
+    height: 135px;
+}
+
+.mod.blog .ticker div.item a, .mod.blog_1 .ticker div.item a, .mod.custom_ticker .ticker div.item a, .mod.custom_ticker_1 .ticker div.item a {
+    height: 135px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.mod.blog .ticker div.item span.blogDate, .mod.blog_1 .ticker div.item span.blogDate, .mod.custom_ticker .ticker div.item span.blogDate, .mod.custom_ticker_1 .ticker div.item span.blogDate {
+    display: block;
+    padding: 5px 0 0 0;
+    margin: 0px 5px 5px 10px;
+    font-size: 12px;
+}
+
+.mod.blog .ticker div.item span.blogReadMore, .mod.blog_1 .ticker div.item span.blogReadMore, .mod.custom_ticker .ticker div.item span.blogReadMore, .mod.custom_ticker_1 .ticker div.item span.blogReadMore {
+    display: block;
+    margin: 10px 10px 0px 10px;
+    text-align: right;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.mod.blog .ticker div.item span.blogTitle, .mod.blog_1 .ticker div.item span.blogTitle, .mod.custom_ticker .ticker div.item span.blogTitle, .mod.custom_ticker_1 .ticker div.item span.blogTitle {
+    display: block;
+    line-height: 17px;
+    max-height: 16px;
+    overflow: hidden;
+    margin: 0 10px 5px 10px;
+    font-size: 16px;
+}
+
+.mod.blog .ticker div.item span.blogContent, .mod.blog_1 .ticker div.item span.blogContent, .mod.custom_ticker .ticker div.item span.blogContent, .mod.custom_ticker_1 .ticker div.item span.blogContent {
+    display: block;
+    max-height: 32px;
+    overflow: hidden;
+    margin: 0 5px 0px 10px;
+    line-height: 16px;
+}
+
+.mod.blog .ticker p, .mod.blog_1 .ticker p, .mod.custom_ticker .ticker p, .mod.custom_ticker_1 .ticker p {
+    margin: 5px 0 0 0;
+    text-align: center;
+}
+
+.mod.custom_ticker .ticker div.item, .mod.custom_ticker_1 .ticker div.item {
+    padding: 5px;
+    overflow: hidden;
+}
+
+.mod.custom_ticker .ticker div.item a, .mod.custom_ticker_1 .ticker div.item a {
+    display: inline;
+    width: auto;
+    height: auto;
+    text-decoration: underline;
+}
+
+.mod.custom_ticker .ticker p, .mod.custom_ticker_1 .ticker p {
+    margin: 0;
+}
+
+.mod.blog_1 .button {
+    text-align: center;
+    margin: 8px auto 0;
+}
+
+.mod.blog_1 .ticker div.item span.blogDate, .mod.custom_ticker_1.ticker div.item span.blogDate {
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid red;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.mod.blog_1 .ticker div.item span.blogTitle, .mod.custom_ticker_1.ticker div.item span.blogTitle {
+    font-weight: bold;
+    text-align: center;
+}
+
+.mod.blog_1 .ticker div.item span.blogReadMore, .mod.custom_ticker_1.ticker div.item span.blogReadMore {
+    display: none;
+}
+
+.mod.blog_1 .ticker div.item span.blogContent, .mod.custom_ticker_1.ticker div.item span.blogContent {
+    text-align: center;
+}
+
+.mod.blog p, .mod.blog_1 p {
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+.mod.blog a.icon-blog {
+    padding: 5px 0 5px 30px;
 }
