@@ -910,33 +910,35 @@ a:hover {
 
 		.view-blogs {
 			ul li {
-				padding: 10px;
-
-				.views-field-created {
-					font-size: 12px;
+				margin: 0 0 20px;
+				p {
+					padding: 0;
+					margin: 0;
 				}
-
-				.views-field-title {
-					font-size: 16px;
-				}
-
-				.views-field-body {
-					font-size: 16px;
-					margin-top: -10px;
-				}
-
-				.views-field-nid {
-					font-size: 12px;
-					float: right;
-				}
-
-				&:nth-child(2n) {
-					background-color: #e6e6e6;
-				}
-
-				&:nth-child(2n+1) {
-					background-color: #ccc;
-				}
+				// .views-field-created {
+				// 	font-size: 12px;
+				// }
+				//
+				// .views-field-title {
+				// 	font-size: 16px;
+				// }
+				//
+				// .views-field-body {
+				// 	font-size: 16px;
+				// }
+				//
+				// .views-field-nid {
+				//  	font-size: 12px;
+				// 	float: right;
+				// 	clear: both;
+				// }
+				// &:nth-child(2n) {
+				// 	background-color: #e6e6e6;
+				// }
+				//
+				// &:nth-child(2n+1) {
+				// 	background-color: #ccc;
+				// }
 			}
 		}
 	}
