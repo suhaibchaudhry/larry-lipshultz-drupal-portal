@@ -43,6 +43,13 @@ a:hover {
 	color: #0b95da;
 	border-color: #0b95da; }
 
+//Blog Default
+.page-blog .region-content .view-blogs .view-content .views-row {
+	float: none;
+	clear: none;
+	width: auto;
+}
+//Sections and Regions
 .section-header {
 	@include background-image(radial-gradient(50% 31%,ellipse farthest-side,#0B90D3,#065379 100%));
 }
