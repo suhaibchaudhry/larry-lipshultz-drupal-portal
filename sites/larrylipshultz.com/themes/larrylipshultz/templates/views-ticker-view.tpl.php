@@ -36,6 +36,7 @@ else
 $i = 0;
 foreach ($rows as $row)
 {
+	$class = ($i%2 == 0) ? 'even' : 'odd';
 	if ($scroller_type == 'horizontal')
 	{
 		print "<li class='views-liScroll-item views-liScroll-item-$viewname'>";
@@ -43,7 +44,7 @@ foreach ($rows as $row)
 	}
 	elseif ($scroller_type == 'vertical')
 	{
-		print "<li class='views-vTicker-item ticker-".($i%2 == 0)?'even':'odd'." views-vTicker-item-$viewname'>";
+		print "<li class='views-vTicker-item ticker-$class views-vTicker-item-$viewname'>";
 		print "<span class='views-vTicker-tick-field'>$row</span></li>";
 	}
 	elseif($scroller_type=='fade')
