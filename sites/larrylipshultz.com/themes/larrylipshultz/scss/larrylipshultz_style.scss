@@ -572,7 +572,6 @@ a:hover {
 		      width: 100%;
 		      padding-right: 30px;
 					color: #fff;
-
 					&:hover {
 						text-decoration: underline;
 					}
@@ -871,6 +870,7 @@ a:hover {
 				opacity: .1;
 				top: -20px;
 				left: -30px;
+				z-index: 5;
 			}
 			.qr {
 				text-align: right;
@@ -878,6 +878,25 @@ a:hover {
 		    right: -29px;
 		    top: auto;
 		    left: auto;
+				z-index: 5;
+			}
+			.quote-text {
+				position: relative;
+				z-index: 10;
+			}
+			.more-link {
+				font-size: 14px;
+				position: absolute;
+				right: 18px;
+	 			bottom: 5px;
+				z-index: 10;
+
+				a {
+					color: #fff;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
 			}
 		}
 	}
@@ -888,24 +907,24 @@ a:hover {
 	.block-views-blogs-block {
 		padding: 10px;
 		background-color: #fff;
-		
+
 		.view-blogs {
 			ul li {
 				padding: 10px;
-				
+
 				.views-field-created {
 					font-size: 12px;
 				}
-			
+
 				.views-field-title {
 					font-size: 16px;
 				}
-			
+
 				.views-field-body {
 					font-size: 16px;
 					margin-top: -10px;
 				}
-			
+
 				.views-field-nid {
 					font-size: 12px;
 					float: right;
@@ -914,7 +933,7 @@ a:hover {
 				&:nth-child(2n) {
 					background-color: #e6e6e6;
 				}
-		
+
 				&:nth-child(2n+1) {
 					background-color: #ccc;
 				}
