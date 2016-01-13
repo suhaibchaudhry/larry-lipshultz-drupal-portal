@@ -49,6 +49,21 @@ a:hover {
 	clear: none;
 	width: auto;
 }
+.page-blog .region-content .view-blogs .view-content .views-row {
+	border: none;
+}
+.page-blog .region-content .view-content .views-row {
+	h2 {
+		text-transform: none;
+		font-size: 24px;
+		margin: 0 0 8px;
+		padding: 0 0 8px;
+	}
+	.views-field-created {
+		font-size: 12px;
+		margin: 0 0 5px;
+	}
+}
 //Sections and Regions
 .section-header {
 	@include background-image(radial-gradient(50% 31%,ellipse farthest-side,#0B90D3,#065379 100%));
@@ -260,22 +275,22 @@ a:hover {
 
 //Narrow Style
 .region-content {
-	.field-name-field-tags, .submitted {
-			font-size: 12px;
-			color: #676767;
-			margin: 0px 0 6px;
+	.field-name-field-tags, .views-field-field-tags, .submitted {
+    font-size: 12px;
+    color: #676767;
+    margin: 0px 0 6px;
 	}
 
-	.field-name-field-tags {
-		.field-label, .field-items {
-				font-weight: normal;
-				display: inline-block;
-		}
+	.field-name-field-tags, .views-field-field-tags {
+	  .field-label, .views-label, .field-items, .field-content {
+	      font-weight: normal;
+	      display: inline-block;
+	  }
 
-		.field-item {
-			margin: 0 4px 0 0;
-			display: inline-block;
-		}
+	  .field-item {
+	    margin: 0 4px 0 0;
+	    display: inline-block;
+	  }
 
 		a {
 			background-color: #00334d;
