@@ -34,6 +34,11 @@ h2 {
     padding-bottom: 8px;
 }
 
+img {
+  max-width: 100%;
+  height: auto !important;
+}
+
 a:link, a:visited {
   color: #065379;
 	border-color: #065379;
@@ -849,12 +854,31 @@ a:hover {
 		background-color: #fff;
 		box-shadow: 0 0 150px -40px #000;
 		margin-bottom: 50px;
-		
+
 		.block-testimonials-block {
+			position: relative;
 			@include background-image(linear-gradient(#00344e, #0974aa));
-			padding: 20px 30px 40px 30px;
+			padding: 20px 30px 30px 30px;
+			font-size: 26px;
 			color: #fff;
-			font-size: 20px;
+
+			.ql, .qr {
+		    position: absolute;
+		    width: 75px;
+		    height: 75px;
+		    font-size: 200px;
+		    line-height: 200px;
+				opacity: .1;
+				top: -20px;
+				left: -30px;
+			}
+			.qr {
+				text-align: right;
+		    bottom: -23px;
+		    right: -29px;
+		    top: auto;
+		    left: auto;
+			}
 		}
 	}
 }
