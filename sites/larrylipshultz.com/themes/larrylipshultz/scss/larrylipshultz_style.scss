@@ -49,6 +49,12 @@ a:hover {
 .zone-preface {
 	background: none;
 }
+.zone-content-wrapper {
+	.zone-content {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+}
 .zone-user-wrapper {
 	height: 40px;
 	@include background-image(radial-gradient(50% 91%,ellipse farthest-side,#0B90D3,#063D58 100%));
