@@ -58,6 +58,9 @@ zones[footer2] = Footer second
 zones[testimonials] = Testimonials
 regions[testimonials_first] = Testimonials First
 
+zones[header_image] = Header Image
+regions[header_image] = Header Image
+
 zones[copyright] = Copyright
 regions[copyright_first] = Copyright First
 
