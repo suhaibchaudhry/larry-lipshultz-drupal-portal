@@ -1171,3 +1171,10 @@ nav#mmenu_left {
 	height: 47px;
     	margin: 13px 0 0;
 }
+
+.mm-header a {
+	background: url('../images/times.png') no-repeat;
+	text-indent: -9999px;
+	background-position: 0 13px;
+	display: block;
+}
