@@ -16,8 +16,15 @@
    bottom: 0;
    right: 0;
  }
+ .section-header {
+ 	@include background-image(radial-gradient(50% 31%,ellipse farthest-side,#0B90D3,#065379 100%));
+ }
 
 .zone-branding-wrapper {
+  background: url("../images/tex-soft-stone-v1449603337.png") top center;
+  .zone-branding {
+    padding: 50px 0 18px;
+  }
   .region-header-first {
     display: block;
     padding: 49px 0 0;
@@ -102,6 +109,18 @@
 }
 
  .zone-user-wrapper {
+   .zone-user {
+     .block-block-12 {
+       display: none;
+     }
+ 		.block-menu-menu-user-bar-menu {
+ 			display: block;
+ 		}
+
+ 		.block-block-1 {
+ 			display: block;
+ 		}
+   }
    display: block;
  	height: 40px;
  	@include background-image(radial-gradient(50% 91%,ellipse farthest-side,#0B90D3,#063D58 100%));

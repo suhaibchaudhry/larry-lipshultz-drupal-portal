@@ -74,7 +74,7 @@ a:hover {
 }
 //Sections and Regions
 .section-header {
-	@include background-image(radial-gradient(50% 31%,ellipse farthest-side,#0B90D3,#065379 100%));
+	background: #065379 url("//d21xh06p65pae.cloudfront.net/www.larrylipshultz.com/assets/images/tex-soft-stone-v1449603337.png") top center;
 }
 .zone-preface {
 	background: none;
@@ -86,7 +86,29 @@ a:hover {
 	}
 }
 .zone-user-wrapper {
-	display: none;
+	display: block;
+	background-color: #222;
+	height: 75px;
+
+	.zone-user {
+		.region-user-first {
+			height: 100%;
+			width: 50%;
+			color: #fff;
+		}
+
+		.block-block-12 {
+			display: block;
+		}
+
+		.block-menu-menu-user-bar-menu {
+			display: none;
+		}
+
+		.block-block-1 {
+			display: none;
+		}
+	}
 }
 
 .zone-preface-wrapper {
@@ -94,10 +116,8 @@ a:hover {
 }
 
 .zone-branding-wrapper {
-	    background: url("../images/tex-soft-stone-v1449603337.png") top center;
 
 			.zone-branding {
-				padding: 50px 0 18px;
 				.region-branding {
 					margin: 0;
 				}
@@ -1119,4 +1139,12 @@ a:hover {
 
 .mod.blog a.icon-blog {
     padding: 5px 0 5px 30px;
+}
+
+nav#mmenu_left {
+	background-color: #555;
+
+	.mm-header {
+		background: #222;
+	}
 }
