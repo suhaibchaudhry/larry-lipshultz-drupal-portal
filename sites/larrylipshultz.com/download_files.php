@@ -1,4 +1,5 @@
 <?php
+global $base;
 $base = '/home/uitoux/larrylipshultz.com/httpdocs/sites/larrylipshultz.com/files/downloads';
 echo "Downloading Images\n";
 $data = db_select("field_data_body", 'b')
@@ -22,6 +23,7 @@ while($node = $data->fetchObject()) {
 }
 
 function downloadImage($src) {
+	global $base;
 	preg_match('/[^\.]*\.([^\?]*)/', basename($src), $ext);
 	$file = basename(tempnam('', 'image_')).'.'.$ext[1];
 	exec("curl -o ".$base."/".$file." ".$src);
