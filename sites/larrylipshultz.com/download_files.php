@@ -6,5 +6,7 @@ $data = db_select("field_data_body", 'b')
 			->execute();
 
 while($node = $data->fetchObject()) {
-	print_r($node);
+	$body = $node->body_value;
+	preg_match('/\<img(\s+[a-zA-Z\_\-]+\s*\=\s*[\'\"][^\'\"]*[\'\"])*(\s+src\s*\=\s*[\'\"]([^\'\"]*)[\'\"])\s*\/?\>/', $body, $tags);
+	print_r($tags);
 }
