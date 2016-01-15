@@ -16,9 +16,28 @@ while($node = $data->fetchObject()) {
 		//echo "Images: \n";
 		foreach($tags[4] as $src) {
 			if(!empty($src)) {
-				echo downloadImage($src)."\n";
+				$newfile = '/sites/larrylipshultz.com/files/downloads/'.downloadImage($src);
+				$body = str_replace($src, $newfile, $body);
 			}
 		}
+
+		db_update('field_data_body')->fields(array(
+			'body_value' => $body
+		))
+		->condition('entity_type', $node->entity_type, '=')
+		->condition('bundle', $node->bundle, '=')
+		->condition('entity_id', $node->entity_id, '=')
+		->condition('revision_id', $node->revision_id, '=')
+		->condition('delta', $node->delta, '=');
+
+		db_update('field_revision_body')->fields(array(
+                        'body_value' => $body
+                ))
+                ->condition('entity_type', $node->entity_type, '=')
+                ->condition('bundle', $node->bundle, '=')
+                ->condition('entity_id', $node->entity_id, '=')
+                ->condition('revision_id', $node->revision_id, '=')
+                ->condition('delta', $node->delta, '=');
 	}
 }
 
