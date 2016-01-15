@@ -24,5 +24,6 @@ while($node = $data->fetchObject()) {
 function downloadImage($src) {
 	preg_match('/[^\.]*\.([^\?]*)/', basename($src), $ext);
 	$file = tempnam('', 'image_').'.'.$ext[1];
+	exec("curl -o ".$base."/".$file." ".$src);
 	return basename($file);
 }
