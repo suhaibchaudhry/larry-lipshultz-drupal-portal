@@ -28,7 +28,7 @@ while($node = $data->fetchObject()) {
 		->condition('bundle', $node->bundle, '=')
 		->condition('entity_id', $node->entity_id, '=')
 		->condition('revision_id', $node->revision_id, '=')
-		->condition('delta', $node->delta, '=');
+		->condition('delta', $node->delta, '=')->execute();
 
 		db_update('field_revision_body')->fields(array(
                         'body_value' => $body
@@ -37,7 +37,7 @@ while($node = $data->fetchObject()) {
                 ->condition('bundle', $node->bundle, '=')
                 ->condition('entity_id', $node->entity_id, '=')
                 ->condition('revision_id', $node->revision_id, '=')
-                ->condition('delta', $node->delta, '=');
+                ->condition('delta', $node->delta, '=')->execute();
 	}
 }
 
