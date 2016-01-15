@@ -1142,9 +1142,25 @@ a:hover {
 }
 
 nav#mmenu_left {
-	background-color: #555;
+	background-color: #333;
 
 	.mm-header {
 		background: #222;
+		height: 75px;
+	}
+
+	ul.mm-panel {
+		padding-top: 74px;
+		ul.mmenu-mm-list-level-1 {
+			margin: 0 10px;
+			li {
+				padding: 10px;
+				border-bottom: 1px solid #555;
+
+				a {
+					font-size: 25px;
+				}
+			}
+		}
 	}
 }
