@@ -1,4 +1,17 @@
 <?php
+function larrylipshultz_breadcrumb($breadcrumb) {
+  if (!empty($breadcrumb['breadcrumb'])) {
+    if ($breadcrumb['breadcrumb'][1] == l(t('Blogs'), 'blog')){  		  // For blog nodes... 
+      unset($breadcrumb['breadcrumb'][2]);                      // ...remove "user's blog"...                             
+     // unset($breadcrumb['breadcrumb'][1]);                      // ...and "blogs".
+      
+    }
+    // Now call the original theme with this modified breadcrumb array, to get formatting.
+    return '<div class="breadcrumb">'. implode(' › ', $breadcrumb['breadcrumb']) .'</div>';
+  }
+}
+
+
 function larrylipshultz_menu_link(array $variables) {
   $element = $variables['element'];
 
