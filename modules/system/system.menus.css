@@ -34,8 +34,7 @@ li.leaf {
   margin: 0;
 }
 li a.active {
-  color: #065379;
-  font-weight: bold;
+  color: #000;
 }
 td.menu-disabled {
   background: #ccc;

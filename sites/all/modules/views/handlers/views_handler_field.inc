@@ -1202,9 +1202,9 @@ If you would like to have the characters \'[\' and \']\' please use the html ent
    */
   function render_altered($alter, $tokens) {
     // Filter this right away as our substitutions are already sanitized.
-    //$allowedtags = variable_get('views_rewrite_output_allowed_tags');
-    $value = $alter['text'];
+    $value = filter_xss_admin($alter['text']);
     $value = strtr($value, $tokens);
+
     return $value;
   }
 
